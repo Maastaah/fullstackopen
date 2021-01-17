@@ -35,16 +35,16 @@ let persons = [
   },
 ];
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello World!</h1>");
-});
+// app.get("/", (req, res) => {
+//   res.send("<h1>Hello World!</h1>");
+// });
 
-app.get("/info", (req, res) => {
-  const count = persons.length;
-  const date = new Date();
-  res.send(`<p>Phonebook has info for ${count} people</p>
-  <p>${date}</p>`);
-});
+// app.get("/info", (req, res) => {
+//   const count = persons.length;
+//   const date = new Date();
+//   res.send(`<p>Phonebook has info for ${count} people</p>
+//   <p>${date}</p>`);
+// });
 
 app.get("/api/persons", (req, res) => {
   res.json(persons);
